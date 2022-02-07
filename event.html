@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 onclick="console.log('one')">Event nia clickbaji</h1>
+    <button onclick=" window.location.href= 'https://www.w3schools.com/js/js_events.asp ' ">click me</button>
+
+    <button onclick="makeRed()">For red</button>
+    <button id="make-yellow-button">For yellow</button>
+
+    <script>
+        function makeRed(){
+            document.body.style.backgroundColor='red';
+        }
+
+        const buttons= document.getElementById('make-yellow-button')
+        buttons.addEventListener('click', function(){
+            document.body.style.backgroundColor='yellow';
+        })
+    </script>
+
+</body>
+</html>

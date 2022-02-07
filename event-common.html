@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="direct-handle"></p>
+    <button id="direct-button">submit</button>  
+
+    <input id="text-value" type="text">  
+    <button id="update-button">update</button>
+
+    <script>
+       
+
+document.getElementById('update-button').addEventListener('click',function(){
+    const textvalue=document.getElementById('text-value');
+    const p=document.getElementById('direct-handle');
+
+    p.innerText=textvalue.value;
+    textvalue.value= '';
+   
+})
+
+    </script>
+
+    <script src="event-common.js"></script>
+</body>
+</html>
